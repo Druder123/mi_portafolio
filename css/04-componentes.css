@@ -1,0 +1,200 @@
+/* Skip link accesibilidad */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: var(--color-primario);
+  color: #1e222b;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 6px 0;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Botones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: var(--font-principal);
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--color-primario);
+  color: var(--color-btn-texto) !important;
+  border-color: var(--color-primario);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 12px rgba(97, 175, 239, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: #4da0e6;
+  box-shadow: 0 0 12px rgba(97, 175, 239, 0.4);
+}
+
+.btn-secondary {
+  border: 1px solid var(--color-borde);
+  color: var(--color-texto-brillante);
+  background: var(--color-superficie);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primario);
+  color: var(--color-primario);
+}
+
+.btn-theme, .hamburger {
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  font-size: 1.1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--color-texto-brillante);
+  transition: border-color 0.2s ease;
+}
+
+.btn-theme:hover, .hamburger:hover {
+  border-color: var(--color-primario);
+}
+
+/* Tags / Etiquetas de proyectos */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 1.25rem 0;
+}
+
+.tags li {
+  background-color: var(--color-tag-bg);
+  color: var(--color-tag-texto);
+  border: 1px solid var(--color-borde);
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  font-family: var(--font-code);
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Indicador de foco accesible */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--color-primario);
+  outline-offset: 3px;
+}
+
+/* Formulario de Contacto Estilo IDE */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.campo label {
+  font-family: var(--font-code);
+  font-size: 0.9rem;
+  color: var(--color-texto-brillante);
+  font-weight: 500;
+}
+
+.campo input, .campo textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  background-color: #181a1f;
+  color: var(--color-texto-brillante);
+  font-family: var(--font-principal);
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campo input:focus, .campo textarea:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 8px rgba(97, 175, 239, 0.2);
+  outline: none;
+}
+
+.error-msg {
+  color: var(--color-error);
+  font-size: 0.825rem;
+  font-family: var(--font-code);
+}
+
+.feedback-exito {
+  color: var(--color-exito);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: rgba(152, 195, 121, 0.1);
+  border: 1px solid var(--color-exito);
+}
+
+/* Panel de Información Directa de Contacto */
+.contacto-info {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: var(--esp-3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: fit-content;
+}
+
+.contacto-info h3 {
+  color: var(--color-texto-brillante);
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--color-borde);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-info p {
+  margin-bottom: 0;
+  color: var(--color-texto);
+  font-size: 0.95rem;
+}
+
+.contacto-info strong {
+  color: var(--color-texto-brillante);
+}
+
+/* Enlaces celestes brillantes para tema oscuro */
+.contacto-info a, .btn-link {
+  color: #61afef !important;
+  text-decoration: none;
+  font-family: var(--font-code);
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.contacto-info a:hover, .btn-link:hover {
+  color: #98c379 !important;
+  text-decoration: underline;
+}

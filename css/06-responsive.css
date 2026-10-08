@@ -1,0 +1,86 @@
+/* RESPONSIVE DESIGN & BREAKPOINTS */
+
+/* Pantallas Medianas / Tablets (Breakpoint hasta 960px) */
+@media (max-width: 960px) {
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-superficie);
+    border-bottom: 1px solid var(--color-borde);
+    padding: var(--esp-3) var(--esp-2);
+    box-shadow: var(--sombra);
+    z-index: 99;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: var(--esp-4) var(--esp-2);
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .contacto-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar-frame {
+    width: 200px;
+    height: 240px;
+  }
+}
+
+/* Pantallas Grandes (Desktop desde 961px) */
+@media (min-width: 961px) {
+  .hamburger {
+    display: none !important;
+  }
+
+  .nav {
+    display: block !important;
+  }
+}
+
+/* Pantallas Pequeñas (Móviles hasta 480px) */
+@media (max-width: 480px) {
+  .brand-text {
+    font-size: 0.85rem;
+  }
+
+  .proyectos-grid, .habilidades-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .avatar-frame {
+    width: 170px;
+    height: 170px;
+  }
+}

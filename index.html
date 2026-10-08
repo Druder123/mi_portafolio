@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portafolio profesional de Abdiel Ruiz Gutiérrez — Desarrollador Web, Técnico en Computación, Programador C++/Embedded y Kotlin.">
+  <title>Abdiel Ruiz Gutiérrez — Portafolio & Dev Profile</title>
+
+  <!-- Carga optimizada de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <link rel="stylesheet" href="css/00-reset.css">
+  <link rel="stylesheet" href="css/01-variables.css">
+  <link rel="stylesheet" href="css/02-tipografia.css">
+  <link rel="stylesheet" href="css/03-layout.css">
+  <link rel="stylesheet" href="css/04-componentes.css">
+  <link rel="stylesheet" href="css/05-utilidades.css">
+  <link rel="stylesheet" href="css/06-responsive.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- BARRA TIPO IDE HEADER -->
+  <header class="header">
+    <div class="logo">
+      <span class="ide-dot red"></span>
+      <span class="ide-dot yellow"></span>
+      <span class="ide-dot green"></span>
+      <span class="brand-text">abdiel_ruiz.dev</span>
+    </div>
+    <button id="hamburger" class="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false">
+      ☰
+    </button>
+    <nav id="nav-menu" class="nav">
+      <ul>
+        <li><a href="#sobre-mi"><span class="code-tag">&lt;</span>Sobre mí<span class="code-tag">/&gt;</span></a></li>
+        <li><a href="#proyectos"><span class="code-tag">&lt;</span>Proyectos<span class="code-tag">/&gt;</span></a></li>
+        <li><a href="#habilidades"><span class="code-tag">&lt;</span>Habilidades<span class="code-tag">/&gt;</span></a>
+        </li>
+        <li><a href="#trayectoria"><span class="code-tag">&lt;</span>Trayectoria<span class="code-tag">/&gt;</span></a>
+        </li>
+        <li><a href="#contacto"><span class="code-tag">&lt;</span>Contacto<span class="code-tag">/&gt;</span></a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" class="btn-theme" aria-label="Cambiar tema de color">🌙</button>
+  </header>
+
+  <main id="main">
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="badge-status">⚡ Técnico en Computación &amp; Dev Autodidacta</div>
+          <h1>Hola, soy <span class="destacado">Abdiel Ruiz</span></h1>
+          <p class="subtitulo">Desarrollador con sólidas bases en <strong>Sistemas Embebidos (C++)</strong>,
+            <strong>Android (Kotlin/Jetpack Compose)</strong>, desarrollo de videojuegos en <strong>Unity</strong> y
+            desarrollo web accesible.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn btn-primary">✉️ Contactar</a>
+            <a href="#proyectos" class="btn btn-secondary">🚀 Ver Proyectos</a>
+          </div>
+        </div>
+        <div class="hero-avatar-box">
+          <div class="avatar-frame">
+            <img src="img/avatar.webp" alt="Fotografía de Abdiel Ruiz Gutiérrez" fetchpriority="high" loading="eager"
+              width="280" height="280" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="seccion">
+      <h2><span class="prefix-num">01.</span> Sobre mí</h2>
+      <div class="sobre-mi-card">
+        <p>Actualmente curso la carrera <strong>Técnica en Computación en el CECyT 3 (IPN)</strong>. Me apasiona la
+          programación a bajo y alto nivel, combinando el desarrollo lógico y autodidacta con estándares profesionales.
+        </p>
+        <p>He completado la formación oficial de Google en <strong>Kotlin y Jetpack Compose</strong>, desarrollado
+          lógica de máquinas de estados y telemetría LoRa para proyectos aeroespaciales, además de crear lógica de
+          videojuegos en Unity, desarrollo web frontend accesible y aplicaciones de impacto social como un traductor
+          Braille.</p>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="seccion">
+      <h2><span class="prefix-num">02.</span> Proyectos Destacados</h2>
+      <div class="proyectos-grid">
+
+        <!-- Proyecto 0: Portafolio Web Integrador -->
+        <article class="proyecto-card">
+          <div class="proyecto-img-wrapper">
+            <img src="img/portafolio-web.webp" alt="Portafolio Web Personal"
+              onerror="this.src='https://via.placeholder.com/600x350/1e222b/61afef?text=Portafolio+Web+Accesible'"
+              loading="lazy">
+          </div>
+          <div class="proyecto-body">
+            <h3>Portafolio Web Personal (Unidad 1.12)</h3>
+            <p>Sitio web integrador maquetado con HTML5 semántico, CSS3 moderno (custom properties, Grid y Flexbox) y
+              JavaScript Vanilla. Auditoría de calidad con Lighthouse (95+ en todas las categorías) y WCAG AA.</p>
+            <ul class="tags">
+              <li>HTML5 Semántico</li>
+              <li>CSS3 Variables &amp; Grid</li>
+              <li>JS Vanilla / Accessibility</li>
+              <li>Lighthouse 95+</li>
+            </ul>
+            <a href="https://github.com/Druder123" target="_blank" rel="noopener noreferrer" class="btn-link">Ver Código
+              en GitHub ➔</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 1: Artemis -->
+        <article class="proyecto-card">
+          <div class="proyecto-img-wrapper">
+            <img src="img/artemis.webp" alt="Computadora de vuelo Artemis"
+              onerror="this.src='https://via.placeholder.com/600x350/1e222b/61afef?text=Artemis+FSM+LoRa'"
+              loading="lazy">
+          </div>
+          <div class="proyecto-body">
+            <h3>Artemis — Computadora de Vuelo (Hidrochallenge IPN)</h3>
+            <p>Repositorio oficial de la computadora de vuelo para el vehículo aeroespacial Artemis. Adquisición de
+              datos inerciales y ambientales, gestión de máquina de estados finitos (FSM) y telemetría de largo alcance
+              vía LoRa.</p>
+            <ul class="tags">
+              <li>C++ / Embebidos</li>
+              <li>LoRa Telemetry</li>
+              <li>FSM Architecture</li>
+              <li>Microcontroladores</li>
+            </ul>
+            <a href="https://github.com/Druder123" target="_blank" rel="noopener noreferrer" class="btn-link">Ver
+              Repositorio ➔</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: Braille App -->
+        <article class="proyecto-card">
+          <div class="proyecto-img-wrapper">
+            <img src="img/braille.webp" alt="Traductor Braille"
+              onerror="this.src='https://via.placeholder.com/600x350/1e222b/98c379?text=Braille+Application'"
+              loading="lazy">
+          </div>
+          <div class="proyecto-body">
+            <h3>Braille Application — Traductor Inclusivo</h3>
+            <p>Aplicación orientada a la accesibilidad e inclusión capaz de traducir texto convencional a la matriz de
+              puntos del sistema Braille de manera dinámica y accesible.</p>
+            <ul class="tags">
+              <li>Java / Kotlin</li>
+              <li>Algoritmos</li>
+              <li>Accesibilidad</li>
+            </ul>
+            <a href="https://github.com/Druder123/braille-application" target="_blank" rel="noopener noreferrer"
+              class="btn-link">Ver en GitHub ➔</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 3: Unity Game -->
+        <article class="proyecto-card">
+          <div class="proyecto-img-wrapper">
+            <img src="img/unity-game.webp" alt="Videojuego Unity"
+              onerror="this.src='https://via.placeholder.com/600x350/1e222b/e5c07b?text=Unity+Engine+Game'"
+              loading="lazy">
+          </div>
+          <div class="proyecto-body">
+            <h3>Desarrollo de Videojuegos en Unity</h3>
+            <p>Implementación de mecánicas de juego, física 2D/3D, control de personajes y lógica de eventos
+              desarrollada de forma autodidacta en C#.</p>
+            <ul class="tags">
+              <li>Unity 3D/2D</li>
+              <li>C#</li>
+              <li>Game Loop</li>
+            </ul>
+            <a href="https://github.com/Druder123" target="_blank" rel="noopener noreferrer" class="btn-link">Ver
+              Proyectos ➔</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 4: Kotlin App -->
+        <article class="proyecto-card">
+          <div class="proyecto-img-wrapper">
+            <img src="img/kotlin-app.webp" alt="App Kotlin Jetpack Compose"
+              onerror="this.src='https://via.placeholder.com/600x350/1e222b/c678dd?text=Jetpack+Compose+App'"
+              loading="lazy">
+          </div>
+          <div class="proyecto-body">
+            <h3>Android UI con Jetpack Compose</h3>
+            <p>Proyectos desarrollados tras completar la ruta oficial de Google: interfaces modernas reactivas,
+              arquitectura recomendada y manejo de estados.</p>
+            <ul class="tags">
+              <li>Kotlin</li>
+              <li>Jetpack Compose</li>
+              <li>Android SDK</li>
+            </ul>
+            <a href="https://github.com/Druder123" target="_blank" rel="noopener noreferrer" class="btn-link">Ver Código
+              ➔</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="seccion">
+      <h2><span class="prefix-num">03.</span> Habilidades Técnicas</h2>
+      <div class="habilidades-container">
+        <div class="grupo-habilidades">
+          <h3>💻 Lenguajes &amp; Frameworks</h3>
+          <ul>
+            <li>C / C++ (Sistemas Embebidos)</li>
+            <li>Kotlin &amp; Jetpack Compose</li>
+            <li>C# (Unity Engine)</li>
+            <li>HTML5 / CSS3 / JavaScript (ES6+)</li>
+          </ul>
+        </div>
+        <div class="grupo-habilidades">
+          <h3>🛠️ Herramientas &amp; Hardware</h3>
+          <ul>
+            <li>Microcontroladores (ESP32 / Arduino / STM32)</li>
+            <li>Telemetría LoRa &amp; Sensores I2C/SPI</li>
+            <li>Git / GitHub / VS Code / Android Studio</li>
+            <li>Lighthouse Auditorías &amp; WCAG AA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAYECTORIA Y LOGROS (TIMELINE) -->
+    <section id="trayectoria" class="seccion">
+      <h2><span class="prefix-num">04.</span> Trayectoria &amp; Logros</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026 — Presente</span>
+            <h3>💻 Desarrollo del Portafolio Web Profesional</h3>
+            <p>Construcción de sitio web accesible, modular y optimizado con HTML5 semántico, CSS Grid, custom
+              properties y JavaScript Vanilla, superando auditorías de rendimiento Lighthouse 95+.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026 — Presente</span>
+            <h3>🏅 Preparación para la Olimpiada Nacional de Biología</h3>
+            <p>Entrenamiento intensivo en ciencias biológicas, análisis teórico y resolución de problemas de alto nivel
+              competitivo.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — Presente</span>
+            <h3>🚀 Equipo de Cohetería Hidropropulsada (Hidrochallenge IPN)</h3>
+            <p>Desarrollador de la computadora de vuelo del vehículo aeroespacial Artemis. Programación de FSM,
+              adquisición de datos e integración de módulo LoRa.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">En Curso</span>
+            <h3>🎓 Carrera Técnica en Computación</h3>
+            <p>Estudiante en el CECyT 3 "Estanislao Ramírez Ruiz" - Instituto Politécnico Nacional (IPN).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Certificación Google</span>
+            <h3>📱 Android Basics with Jetpack Compose</h3>
+            <p>Finalización exitosa del curso oficial de Google para el desarrollo de aplicaciones móviles modernas en
+              Kotlin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion">
+      <h2><span class="prefix-num">05.</span> Contacto</h2>
+      <div class="contacto-wrapper">
+        <form id="form-contacto" class="formulario" action="https://formspree.io/f/mzedeaar" method="POST"
+          novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <span class="error-msg" id="error-nombre"></span>
+          </div>
+          <div class="campo">
+            <label for="email">Correo Electrónico:</label>
+
+            <!-- Importante: Formspree necesita el atributo name="_replyto" o name="email" -->
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            <span class="error-msg" id="error-email"></span>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <span class="error-msg" id="error-mensaje"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar Mensaje ✉️</button>
+          <div id="form-feedback" class="feedback-exito" role="status"></div>
+        </form>
+
+        <div class="contacto-info">
+          <h3>Información Directa</h3>
+          <p><strong>Email:</strong> <a href="mailto:abdirugu123@gmail.com">abdirugu123@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/Druder123" target="_blank"
+              rel="noopener">@Druder123</a></p>
+          <p><strong>Ubicación:</strong> Ciudad de México, México</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Abdiel Ruiz Gutiérrez. Diseñado con estilo IDE Dark &amp; construido con HTML5/CSS3/JS Vanilla.</p>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>

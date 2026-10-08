@@ -1,0 +1,8 @@
+.destacado {
+  color: var(--color-primario);
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}

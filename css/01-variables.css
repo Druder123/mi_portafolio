@@ -1,0 +1,55 @@
+:root {
+  /* Paleta IDE Dark (One Dark Pro / VS Code) */
+  --color-fondo: #1e222b;
+  --color-superficie: #21252b;
+  --color-tarjeta: #282c34;
+  --color-texto: #abb2bf;
+  --color-texto-brillante: #ffffff;
+  --color-primario: #61afef; /* Azul OneDark */
+  --color-btn-texto: #1e222b;
+  --color-acento: #98c379;   /* Verde */
+  --color-amarillo: #e5c07b;
+  --color-morado: #c678dd;
+  --color-borde: #3e4451;
+  --color-error: #e06c75;
+  --color-exito: #98c379;
+
+  /* Tags de Proyectos */
+  --color-tag-bg: #181a1f;
+  --color-tag-texto: #61afef;
+
+  /* Tipografía */
+  --font-principal: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-code: 'Fira Code', monospace;
+
+  /* Espaciados */
+  --esp-1: 0.5rem;
+  --esp-2: 1rem;
+  --esp-3: 1.5rem;
+  --esp-4: 2rem;
+  --esp-5: 3.5rem;
+
+  --radio: 10px;
+  --sombra: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Modo Claro (se activa dinámicamente con .light-mode) */
+html.light-mode {
+  --color-fondo: #f5f6f8;
+  --color-superficie: #ffffff;
+  --color-tarjeta: #ffffff;
+  --color-texto: #4b5563;
+  --color-texto-brillante: #111827;
+  --color-primario: #0284c7;  /* Azul brillante y contrastado */
+  --color-btn-texto: #ffffff; /* Texto blanco legible sobre azul */
+  --color-acento: #15803d;    /* Verde contrastado */
+  --color-borde: #d1d5db;
+  --color-error: #dc2626;
+  --color-exito: #16a34a;
+
+  /* Tags en modo claro */
+  --color-tag-bg: #e0f2fe;
+  --color-tag-texto: #0369a1;
+
+  --sombra: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
