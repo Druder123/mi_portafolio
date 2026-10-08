@@ -3,7 +3,7 @@
 Sitio web personal desarrollado con HTML5 semántico, CSS3 moderno modular y JavaScript Vanilla (ES6+).
 
 ## 🚀 Demo en Vivo
-[URL de tu sitio desplegado en GitHub Pages o Netlify]
+https://druder123.github.io/mi_portafolio/
 
 ## ✨ Características
 - **Accesibilidad:** Cumplimiento de estándar WCAG AA con navegación por teclado y etiquetas semánticas.
@@ -18,5 +18,4 @@ Sitio web personal desarrollado con HTML5 semántico, CSS3 moderno modular y Jav
 - Git / GitHub Pages / Netlify
 
 ## 📬 Contacto
-- **GitHub:** https://github.com/tu-usuario
-- **LinkedIn:** https://linkedin.com/in/tu-usuario
+- **GitHub:** https://github.com/Druder123
